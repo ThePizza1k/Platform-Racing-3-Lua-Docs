@@ -54,6 +54,34 @@ blendMode = "normal"
 --- Whether or not the text field was destroyed. Calling `destroy` sets this to true. Read-only.
 destroyed = false
 
+--- The text within the text field.
+text = ""
+
+--- Text field width in pixels. Setting this disables auto sizing if word wrap is also disabled.
+width = 0
+
+--- Text field height in pixels. Setting this disables auto sizing.
+height = 0
+
+--- Size of the text.
+size = 14
+
+--- RGB color of the text.
+color = 0xFFFFFF
+
+--- Text alignment mode
+align = "left"
+
+--- Whether the text automatically wraps around or not.
+wordWrap = true
+
+--- Text auto-sizing mode.
+autoSize = "none"
+
+--- Destroys the text field.
+function destroy()
+end
+
 --- Returns the bounds of the text field as a Rectangle, relative to itself.
 --- <https://airsdk.dev/reference/actionscript/3.0/flash/geom/Rectangle.html>
 function getBounds()
