@@ -19,7 +19,7 @@ scaleY = 1.0
 --- The rotation of the text field, in degrees, when it is the child of a sprite. By default 0.
 rotation = 0
 
---- The transparency of the text field. 1 is completely opaque, 0 is completely invisible. By default 1.
+--- The alpha of the text field, represented by a number in the range of 0 - 1. An alpha of 0 means the text field is completely transparent; 1 means fully visible. By default 1.
 alpha = 1
 
 --- A number value that is multiplied with the red color channel when drawn. By default 1.
