@@ -1,21 +1,73 @@
 --- Sprite related variables and functions.
 ...
 
+--- The x position, in pixels, of the sprite when it is the child of another sprite. By default 0.
+x = 0
+
+--- The y position, in pixels, of the sprite when it is the child of another sprite. By default 0.
+y = 0
+
+--- The horizontal scale of the sprite when it is the child of another sprite. By default 1.
+scaleX = 1.0
+
+--- The vertical scale of the sprite when it is the child of another sprite. By default 1.
+scaleY = 1.0
+
+--- The vertical scale of the sprite when it is the child of another sprite. By default 1.
+scaleY = 1.0
+
+--- The rotation of the sprite, in degrees, when it is the child of another sprite. By default 0.
+rotation = 0
+
 --- The alpha of the sprite, represented by a number in the range of 0 - 1. An alpha of 0 means the sprite is completely transparent; 1 means fully visible. By default 1.
 alpha = 1
+
+--- A number value that is multiplied with the red color channel when drawn. By default 1.
+redMultiplier = 1
+
+--- A number value that is multiplied with the green color channel when drawn. By default 1.
+greenMultiplier = 1
+
+--- A number value that is multiplied with the blue color channel when drawn. By default 1.
+blueMultiplier = 1
+
+--- Sets red, green, and blue multipliers based on a hexadecimal RGB value (e.g. 0xFF0000). Write-only.
+colorMultiplier = 0xFFFFFF
+
+--- A number value from -255 to 255 that is added to the alpha channel after it is multiplied by alpha. By default 0.
+alphaOffset = 0
+
+--- A number value from -255 to 255 that is added to the alpha channel after it is multiplied by redMultiplier. By default 0.
+redOffset = 0
+
+--- A number value from -255 to 255 that is added to the alpha channel after it is multiplied by greenMultiplier. By default 0.
+greenOffset = 0
+
+--- A number value from -255 to 255 that is added to the alpha channel after it is multiplied by blueMultiplier. By default 0.
+blueOffset = 0
 
 --- The blend mode of the sprite. By default "normal".
 --- Valid blend modes are defined here:
 --- <https://airsdk.dev/reference/actionscript/3.0/flash/display/BlendMode.html>
 blendMode = "normal"
 
+--- Whether or not the sprite was destroyed. Calling `destroy` sets this to true. Read-only.
+destroyed = false
+
 --- The number of children the sprite has. By default 0. Read-only.
 --- @see addChild
 --- @see removeChild
 numChildren = 0
 
---- Whether or not the sprite was destroyed. Calling `destroy` sets this to true. Read-only.
-destroyed = false
+--- Returns the bounds of the sprite as a Rectangle, relative to itself.
+--- <https://airsdk.dev/reference/actionscript/3.0/flash/geom/Rectangle.html>
+function getBounds()
+end
+
+--- Returns the bounds of the sprite as a Rectangle, relative to itself, excluding any strokes on shapes.
+--- <https://airsdk.dev/reference/actionscript/3.0/flash/geom/Rectangle.html>
+function getRect()
+end
 
 --- Starts a solid fill with the given ARGB values. Subsequent draw operations will rely on this fill until the fill is ended.
 --- You must call endFill() to ensure all draw operations take effect.
