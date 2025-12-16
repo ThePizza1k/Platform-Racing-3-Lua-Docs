@@ -75,6 +75,9 @@ align = "left"
 --- Whether the text automatically wraps around or not.
 wordWrap = true
 
+--- Whether the text is underlined or not. By default false.
+underline = false
+
 --- Text auto-sizing mode.
 autoSize = "none"
 
