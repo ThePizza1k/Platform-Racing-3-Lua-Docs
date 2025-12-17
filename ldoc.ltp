@@ -79,7 +79,7 @@
 # for item in items() do
 #   itemSortTable[#itemSortTable + 1] = item
 # end
-# table.sort(itemSortTable,function(a,b) return display_name(a) < display_name(b) end)
+# table.sort(itemSortTable,function(a,b) return display_name(a):lower() < display_name(b):lower() end)
 # for i = 1, #itemSortTable do
 #   local item = itemSortTable[i]
     <li><a href="#$(item.name)">$(display_name(item))</a></li>
