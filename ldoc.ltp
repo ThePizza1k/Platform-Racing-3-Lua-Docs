@@ -39,6 +39,18 @@
 
 <div id="main">
 
+# local function sort(t, comp)
+#   local i = 2
+#   while i < #t do
+#     local j = i;
+#     while j > 1 and comp(t[j-1],t[j] do
+#       t[j-1], t[j] = t[j], t[j-1]
+#       j = j - 1
+#     end
+#     i = i + 1
+#   end
+# end
+
 # local no_spaces = ldoc.no_spaces
 # local use_li = ldoc.use_li
 # local display_name = ldoc.display_name
@@ -89,7 +101,7 @@
 <ul class="$(kind=='Topics' and '' or 'nowrap')">
 #  local modSortTable = {}
 #  for mod in mods() do modSortTable[#modSortTable + 1] = mod end
-#  table.sort(modSortTable, function(a,b) return display_name(a):lower() < display_name(b):lower() end)
+#  sort(modSortTable, function(a,b) return display_name(a):lower() < display_name(b):lower() end)
 #   for _,mod in ipairs(modSortTable) do
 #    local name = display_name(mod)
 #   if mod.name == this_mod then
