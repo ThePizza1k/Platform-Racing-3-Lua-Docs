@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="$(ldoc.custom_css)" type="text/css" />
 # end
     <style>
+		div.content {
+            width = 1000px;
+        }
         table.function_list td.name {
-            min-width: 200px;
-            max-width: 300px;
+            min-width: 350px;
+            max-width: 350px;
         }
         span.parameter {
             font-size: 1.09em;
