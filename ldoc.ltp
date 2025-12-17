@@ -77,7 +77,7 @@
 <ul class="nowrap">
 # local itemSortTable = {}
 # for item in items() do
-#   itemSortTable[#itemSortTable] = item
+#   itemSortTable[#itemSortTable + 1] = item
 # end
 # table.sort(itemSortTable,function(a,b) return a:lower() < b:lower() end)
 # for i = 1, #itemSortTable do
