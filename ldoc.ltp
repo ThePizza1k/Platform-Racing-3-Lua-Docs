@@ -89,7 +89,7 @@
 <ul class="$(kind=='Topics' and '' or 'nowrap')">
 #  local modSortTable = {}
 #  for mod in mods() do modSortTable[#modSortTable + 1] = mod end
-#  table.sort(modSortTable, function(a,b) display_name(a):lower() < display_name(b):lower() end)
+#  table.sort(modSortTable, function(a,b) return display_name(a):lower() < display_name(b):lower() end)
 #   for _,mod in ipairs(modSortTable) do
 #    local name = display_name(mod)
 #   if mod.name == this_mod then
