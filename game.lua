@@ -57,6 +57,10 @@ start = nil
 --- @see eventlistener
 tick = nil
 
+--- The event handler for enter frame. Fires on every rendered frame.
+--- @see eventlistener
+enterFrame = nil
+
 --- The handler for gameEvents sent via player.postGameEvent.
 ---
 --- Provides a gameEvent, from which you can get data and source (the player-sender).
